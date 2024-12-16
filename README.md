@@ -16,6 +16,10 @@ This repository is dedicated to managing Continuous Integration and Continuous D
 
 ## Workflows
 
+### Publish Docker Image
+**Workflow File:** `publish_docker_image.yml`  
+**Purpose:** Automates the building and publishing of Docker images to a container registry.
+
 
 ## Usage
 
