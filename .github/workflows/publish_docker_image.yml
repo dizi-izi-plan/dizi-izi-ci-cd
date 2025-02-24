@@ -50,7 +50,7 @@ jobs:
         with:
           push: true
           build-args: |
-            API_URL:=${{ inputs.API_URL }}
+            API_URL=${{ inputs.API_URL }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=registry,ref=${{ env.IMAGE_NAME }}:cache
