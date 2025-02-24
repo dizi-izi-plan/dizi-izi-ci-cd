@@ -34,5 +34,6 @@ jobs:
             echo "Pulling Docker images..."
             docker compose pull ${{ inputs.DOCKER_SERVICE }}
             echo "Restarting Docker containers..."
-            docker compose up ${{ inputs.DOCKER_SERVICE }} -d
+            docker compose down -v
+            docker compose up -d
             echo "Service update completed successfully."
